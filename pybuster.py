@@ -139,15 +139,17 @@ def bust(website, wordlist=None):
 
 def pybuster():
     global speed
+    global args
     try:
-        website = sys.argv[1]
+        args = sys.argv[1]
         wordlist = sys.argv[2]
         speed = sys.argv[3]
         try:
-            bust(website, wordlist)
+            bust(args, wordlist)
         except:
-            bust(website)
+            bust(args)
     except:
+
         print(f"{Fore.LIGHTBLACK_EX}[{Fore.YELLOW}Usage{Fore.LIGHTBLACK_EX}] : {Fore.YELLOW}pybuster {Fore.LIGHTBLACK_EX}[{Fore.YELLOW}website{Fore.LIGHTBLACK_EX}] [{Fore.YELLOW}wordlist{Fore.LIGHTBLACK_EX}] {Fore.LIGHTBLACK_EX}[{Fore.YELLOW}speed{Fore.LIGHTBLACK_EX}]{Fore.RESET}")
 
 
