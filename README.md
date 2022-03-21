@@ -5,6 +5,7 @@ if you don't know what gobuster is it's used to find paths in domains :
 
 https://website.com/m͟a͟i͟n͟
 the underlined part is the path 
+(i supplied a wordlist with the most used paths...)
 
 it's useful for hacking websites because you can find admin pages etc.
 
